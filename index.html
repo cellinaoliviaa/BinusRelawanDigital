@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SoalNomor2/style.css">
+    <title>Binus Relawan Digital</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="SoalNomor2/logobinus.png" alt="">
+        </div>
+        <div class="title">
+            BINUS RELAWAN DIGITAL
+        </div>
+        <br>
+        <br>
+        <div class="content">
+            <form action="#" method="POST" onsubmit="validasi()">
+                <input class= "textfield" type="text" name="nama" id="nama" placeholder="Nama">
+                <br> <br>
+                    <input class= "textfield" type="text" name="email" id="email" placeholder="Email">
+                <br><br>
+                    <textarea name="alamat" id="alamat" placeholder="Alamat" cols="30" rows="5"></textarea>
+                <br><br>
+                    <input class= "textfield" type="text" name="nohp" id="nohp" placeholder="Nomor Handphone">
+                <br><br>
+                
+                <div class="radiobutton">
+                    Peran : 
+                    <input class="radiobutton" type="radio" name="peran" id="peran"> Mahasiswa &nbsp;
+                    <input class="radiobutton" type="radio" name="peran" id="peran"> Dosen
+                    <input class="radiobutton" type="radio" name="peran" id="peran"> Staff Binus
+                </div>
+
+                <br><br>
+                    <div class="pilihsosmed">
+                        <b>Pilih Sosial Media yang Anda Gunakan</b>
+                    </div>
+                    
+                    <div class="sosmed">
+                        <div class="sosmed1" onclick="alert('Choosed!')"> <img src="SoalNomor2/fb.png" width="30px" height="30px" alt=""></div>
+                        <div class="sosmed2" onclick="alert('Choosed!')"> <img src="SoalNomor2/ig.png" width="30px" height="30px" alt=""></div>
+                        <div class="sosmed3" onclick="alert('Choosed!')"> <img src="SoalNomor2/youtube.png" width="30px" height="30px" alt=""></div>
+                        <div class="sosmed4" onclick="alert('Choosed!')"> <img src="SoalNomor2/blogger.png" width="30px" height="30px" alt=""></div>
+                    </div>
+                
+                    <input class="textfield" type="text" name="sosmedid"  id="sosmedid" placeholder= "Nama Sosial Media"/> 
+                <br><br><br>
+                    <input  class="button" type="submit" name="submit" value="Saya siap menjadi Binus Relawan Digital">
+
+               
+            </form>
+
+        </div>
+    </div>
+</body>
+
+
+<script type="text/javascript">
+    function validasi()
+    {
+        var nama = document.getElementById("nama").value;
+        var email = document.getElementById("email").value;
+        var alamat = document.getElementById("alamat").value;
+        var nohp = document.getElementById("nohp").value;
+        var sosmedid = document.getElementById("sosmedid").value;
+        if(nama != "" && email!="" && alamat !="" && nohp!="" && sosmedid!="") 
+        {
+            return true;
+        }else
+        {
+            alert("Data harus diisi dengan lengkap!");
+        }
+    }
+</script>
+</html>
